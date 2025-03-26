@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ master ]
   schedule:
-    - cron: '44 22 * * 0' #mudar horario
+    - cron: '49 20 * * 0' #mudar horario
 
 jobs:
   tfsec:
@@ -16,4 +16,4 @@ jobs:
     name: CodeQL
     uses: getzoop/gha-workflows/.github/workflows/codeql.yml@v5
     with:
-      language: liguagem_do_repo
+      language: python
